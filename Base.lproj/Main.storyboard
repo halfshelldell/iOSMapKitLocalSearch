@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOSMapKitLocalSearch" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="kPf-w7-f1C">
+                                <rect key="frame" x="0.0" y="62" width="375" height="605"/>
+                            </mapView>
+                            <searchBar contentMode="redraw" text="" translatesAutoresizingMaskIntoConstraints="NO" id="KQm-Xg-9CB">
+                                <rect key="frame" x="0.0" y="18" width="375" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kPf-w7-f1C" firstAttribute="top" secondItem="KQm-Xg-9CB" secondAttribute="bottom" id="1c8-7f-Qgf"/>
+                            <constraint firstItem="KQm-Xg-9CB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1ek-es-8dF"/>
+                            <constraint firstItem="KQm-Xg-9CB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2Br-si-cXX"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kPf-w7-f1C" secondAttribute="bottom" id="4sw-Jv-U47"/>
+                            <constraint firstAttribute="trailing" secondItem="kPf-w7-f1C" secondAttribute="trailing" id="9WA-M1-s6X"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kPf-w7-f1C" secondAttribute="bottom" id="Dnp-1c-84Z"/>
+                            <constraint firstItem="kPf-w7-f1C" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FfR-p1-DrW"/>
+                            <constraint firstAttribute="trailing" secondItem="KQm-Xg-9CB" secondAttribute="trailing" id="K44-Tj-066"/>
+                            <constraint firstAttribute="trailing" secondItem="kPf-w7-f1C" secondAttribute="trailing" id="KVu-Yh-Grf"/>
+                            <constraint firstItem="kPf-w7-f1C" firstAttribute="top" secondItem="KQm-Xg-9CB" secondAttribute="bottom" id="MHw-qx-Bkz"/>
+                            <constraint firstItem="kPf-w7-f1C" firstAttribute="top" secondItem="KQm-Xg-9CB" secondAttribute="bottom" id="NAM-5w-lJP"/>
+                            <constraint firstItem="kPf-w7-f1C" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="PNT-Cv-JnY"/>
+                            <constraint firstAttribute="trailing" secondItem="KQm-Xg-9CB" secondAttribute="trailing" id="SZf-nF-RDM"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kPf-w7-f1C" secondAttribute="bottom" id="VdZ-ot-FoK"/>
+                            <constraint firstItem="KQm-Xg-9CB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VmG-L0-IEO"/>
+                            <constraint firstAttribute="trailing" secondItem="kPf-w7-f1C" secondAttribute="trailing" id="Wf3-My-3rF"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kPf-w7-f1C" secondAttribute="bottom" id="Z5b-7f-HVy"/>
+                            <constraint firstAttribute="trailing" secondItem="kPf-w7-f1C" secondAttribute="trailing" id="ZHe-hf-7DU"/>
+                            <constraint firstItem="kPf-w7-f1C" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="amF-Kd-aKy"/>
+                            <constraint firstAttribute="trailing" secondItem="KQm-Xg-9CB" secondAttribute="trailing" id="bg2-IX-t7c"/>
+                            <constraint firstItem="kPf-w7-f1C" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fUd-AZ-iI5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kPf-w7-f1C" secondAttribute="bottom" id="gNW-Pk-OEP"/>
+                            <constraint firstItem="KQm-Xg-9CB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kHB-yk-K0T"/>
+                            <constraint firstItem="kPf-w7-f1C" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="42" id="kOn-cs-Exs"/>
+                            <constraint firstItem="kPf-w7-f1C" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mW2-fv-aba"/>
+                            <constraint firstAttribute="trailing" secondItem="kPf-w7-f1C" secondAttribute="trailing" id="nWi-0M-67Y"/>
+                            <constraint firstAttribute="trailing" secondItem="KQm-Xg-9CB" secondAttribute="trailing" id="pCG-Bc-xh5"/>
+                            <constraint firstAttribute="trailing" secondItem="KQm-Xg-9CB" secondAttribute="trailing" id="pw0-9y-yLH"/>
+                            <constraint firstItem="KQm-Xg-9CB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qCz-PE-N81"/>
+                            <constraint firstItem="kPf-w7-f1C" firstAttribute="top" secondItem="KQm-Xg-9CB" secondAttribute="bottom" id="qzU-zF-VjU"/>
+                            <constraint firstItem="kPf-w7-f1C" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="sNZ-Xh-Ode"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kPf-w7-f1C" secondAttribute="bottom" id="tBH-ty-D9w"/>
+                            <constraint firstAttribute="trailing" secondItem="kPf-w7-f1C" secondAttribute="trailing" id="ySe-TU-DkY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="MyMapView" destination="kPf-w7-f1C" id="fTh-rb-QQ4"/>
+                        <outlet property="MySearchBar" destination="KQm-Xg-9CB" id="OfV-iZ-o5Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>
